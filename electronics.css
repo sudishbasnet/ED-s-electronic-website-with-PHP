@@ -1,0 +1,246 @@
+@import url('https://stockfont.org/?8aa20886ce883e62f74b44827fd8dcd0fd02bf877e2989ff89a7f758c804d447');
+
+* {margin: 0; padding: 0;}
+body {background-color: #DEDEDE; font-family: 'Oxygen-Regular';
+	display: grid;
+  grid-template-columns: 10% 70% 20%;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+	"img img aside"
+	". main aside"
+	"footer footer footer";
+
+}
+
+h1 { font-family: 'Audiowide', cursive; margin: 0.4em;}
+aside h1 a {color: white;}
+header h1:before {content: "\1F5B3"; font-family: 'hack'; padding-right: 0.4em;}
+header h1 {color: #92B2BF; text-shadow: 2px 2px 2px darkgreen;}
+
+body > section {grid-area: img; height: 20vh; background-position: center center;
+	background-image: url(images/randombanner.php);
+	max-height: 300px;
+	background-position: center center;}
+header a { color: white; text-decoration: none;}
+
+header address {float: right; color: white; font-style: normal; padding: 1em;}
+main {min-height: 20vh; grid-area: main; padding: 5vw; background-color: #E8E8E8;}
+
+header {background-color: #1C2524; grid-area: header;transition: 0.5s;}
+
+main h1, main a {color: #92B2BF;text-decoration: none;}
+aside {background-color: #2A3F52; min-height: 20px; grid-area: aside; padding: 1vw; color: white;}
+aside ul {list-style-type: none; margin-bottom: 1em;}
+aside li {padding-left: 20px;}
+aside > ul > li {font-size: 2em;}
+aside > ul > li > ul {font-size: 0.5em;}
+aside a {color: #333; text-decoration: none}
+footer {color: white; padding: 1em; background-color: black; font-size: 0.7em; grid-area: footer;}
+
+header { display: grid;  grid-template-columns: 10% 80% 10%;}
+header ul {align-self: center; display: grid; grid-template-columns: auto auto auto auto auto auto; grid-template-rows: auto; color: white; list-style-type: none;padding-left: 5%;}
+header > ul > li {font-size: 1.5em; cursor: pointer; text-align: center;}
+header ul li ul { margin-left:3vw; text-align: left; display: none; position: absolute; background-color: #333;padding: 0;}
+header ul li ul li {padding: 1vw;}
+header ul li:hover ul {display: block;}
+
+
+h1 {font-weight: bold; margin-bottom: 1em;}
+
+p {margin-top: 0.5em; margin-bottom: 0.5em;}
+
+
+h2 {margin-top: 0.5em;  margin-bottom: 0.5em;}
+
+.products, .reviews {list-style-type: none;}
+.products li, .reviews li {padding: 2em;}
+.products li:nth-child(odd), .reviews li:nth-child(odd) {background-color: #fff;}
+.products li:nth-child(even), .products li:nth-child(even) {background-color: #ddd;}
+.img{width:200px;}
+
+.price { text-align: right; color: darkgreen; font-family: 'Audiowide'; font-weight: bold; font-size: 2em;}
+
+.reviews .details {text-align: right;}
+
+h4 {margin-top: 1em; margin-bottom: 1em;}
+
+.v {
+        border-left: 2px solid gray;
+        height: 350px;
+        margin-left:60%;
+        margin-top:-400px;
+        margin-bottom:6%;
+      }
+
+
+.search input[type=text] {
+      	margin-top: 4px;
+        font-size: 17px;
+        border: none;
+        width: 150px;
+        }
+
+.search input[type=submit] {
+        background:gray;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        margin-top:-30px;
+        margin-left:80%;
+        height:31px;
+        width:50px;
+      }
+
+.search button:hover {
+      background: #ccc;
+  }
+
+main .uPassword{
+        margin-bottom:17%;
+        margin-top: 5%;
+        }
+
+.v ul{  
+        margin-left: 30%;
+        padding-top: 25%;
+      }
+
+.cart { 
+        float: right;
+        background-color: green;
+        padding:4px;
+        border-radius:15%;
+      }
+
+.checkout ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+      }
+
+.checkout ul li{
+        width: 250px;
+        height:60px;
+        background-color: green; 
+        border-radius:15px 15px 0 0;
+        border: 2px solid black;
+        margin:5%;
+        text-align: center;
+      }
+
+.review {
+        list-style-type: none;
+      }
+
+
+  
+img {
+        width: 36px;
+        box-shadow: 0;
+        padding: 6px;
+        display: inline;
+        border: 0;
+}
+
+
+.social_section {
+        display: flex;
+        flex-direction: row;
+        justify-content:right;
+      }
+
+.social_section a:hover, .img:hover {
+        border-radius: 100px;
+        transition:1s ;
+        transform: rotate(360deg);
+ 
+      }
+
+.rating {
+            display: flex;
+            flex-direction:row;
+          }
+
+.rating button[type=image]{ 
+            border:0;width: 30px;
+            padding: 0;
+            margin:0;
+          }
+
+form input {
+            box-sizing: border-box;  
+            display: block; width: 30%;
+            height: 30px;margin-left: 20%;
+            margin-top: -2%;
+          }
+
+form input[name ="create"] {
+            background-color:#DEDEDE;
+            width: 20%;margin-left: 25%;
+            margin-bottom:2%;
+          }
+
+input[name ="fb" ]{
+            background-color: blue;
+            width: 50%;
+            height: 30px;
+          }
+
+input[name ="gmail"]{
+            background-color: green;
+            width: 50%;
+            height: 30px;
+          }
+
+input[name ='create']{
+            background-color:lightblue;
+            width: 50%;
+            height: 30px;
+          }
+
+input[type = 'submit']{width:150px;}
+
+input[type = "submit"]:hover{cursor: pointer;}
+
+select[name = 'c_id']{
+            margin-left: 52px;
+            width:278px;
+            height:30px;
+          }
+
+textarea[name = 'details'] {
+            margin-left:67px;
+            width: 278px;
+          }
+
+select[name = 'p_id']{
+          margin-left: 52px;
+          width:278px;
+          height:30px;
+        }
+
+textarea[name ='comment']{
+          width: 100%;
+        }
+
+select[name ='r_id']{
+         width:500px;
+         height: 50px;
+       }
+
+textarea[name ='msg']{
+      margin-left: 115px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+ 
+ }
+ 
